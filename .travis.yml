@@ -18,4 +18,4 @@ test:app:
   - echo "hello world!"
 test:runUnitTest:
   script:
-  - ./vendor/bin/phpunit tests/Unit/BoxTest.php
+  - vendor/bin/phpunit --coverage-text
