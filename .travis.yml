@@ -7,10 +7,11 @@ php:
 - '7.0'
 
 before_script:
-- apt-get update
-# Install dependencies
-- bash ci/docker_install.sh > /dev/null
-- composer install
+  - composer self-update
+  - composer install --no-interaction
+  # Install dependencies
+  - bash ci/docker_install.sh > /dev/null
+  - composer install
 
 test:app:
   script:
