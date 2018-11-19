@@ -7,5 +7,7 @@ php:
 
 before_script:
   - pwd
-  - ./vendor/bin/phpunit tests/Unit/BoxTest.php
   - composer install
+
+after_script:
+- ./vendor/bin/phpunit tests/Unit/BoxTest.php
