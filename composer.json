@@ -4,5 +4,8 @@
     "firebase/php-jwt": "^5.0",
     "nesbot/carbon": "^1.34",
     "phpunit/phpunit": "~6.0"
+  },
+  "config": {
+    "bin-dir": "vendor/bin/phpunit"
   }
 }
