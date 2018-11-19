@@ -4,7 +4,7 @@ services:
 - docker
 
 before_install:
-- docker pull carlad/sinatra
+- docker pull naonak/docker-apache-php7-laravel
 - docker images
 - docker ps -a
 
