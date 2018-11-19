@@ -1,16 +1,12 @@
-os:
-- linux
+sudo: required
 
-language: php
+services:
+- docker
 
-php:
-- '7.0'
-
-before_script:
-  - composer self-update
-  - composer install --no-interaction
-  # Install dependencies
-  #- bash ci/docker_install.sh > /dev/null
+before_install:
+- docker pull carlad/sinatra
+- docker images
+- docker ps -a
 
 test:app:
   script:
