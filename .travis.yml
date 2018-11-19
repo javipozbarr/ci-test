@@ -2,7 +2,8 @@ os: linux
 
 language: php
 
-version: 7.0
+php:
+- '7.0'
 
 before_script:
   - composer install
