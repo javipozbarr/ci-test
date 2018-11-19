@@ -6,4 +6,5 @@ php:
   - '7.0'
 
 before_script:
+  - pwd
   - composer install
