@@ -6,9 +6,9 @@
     "phpunit/phpunit": "~6.0"
   },
   "config": {
-    "bin-dir": "./vendor/bin/phpunit"
+    "bin-dir": "./vendor/bin"
   },
   "scripts": {
-    "test": "vendor/bin/phpunit"
+    "test": "phpunit"
   }
 }
