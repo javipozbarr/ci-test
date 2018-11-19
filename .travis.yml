@@ -6,8 +6,10 @@ php:
   - '7.0'
 
 before_script:
-  - pwd
   - composer install
 
 after_script:
-- ./vendor/bin/phpunit tests/Unit/BoxTest.php
+  - ./vendor/bin/phpunit tests/Unit/BoxTest.php
+
+script:
+  - vendor/bin/phpunit --coverage-text
