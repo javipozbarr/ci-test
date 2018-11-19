@@ -1,4 +1,10 @@
-image: naonak/docker-apache-php7-laravel
+os:
+- linux
+
+language: php
+
+php:
+- '7.0'
 
 before_script:
 - apt-get update
