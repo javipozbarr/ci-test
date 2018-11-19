@@ -11,7 +11,6 @@ before_script:
   - composer install --no-interaction
   # Install dependencies
   - bash ci/docker_install.sh > /dev/null
-  - composer install
 
 test:app:
   script:
