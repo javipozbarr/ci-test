@@ -6,6 +6,9 @@
     "phpunit/phpunit": "~6.0"
   },
   "config": {
-    "bin-dir": "/home/travis/build/javipozbarr/ci-test/vendor/bin/phpunit"
+    "bin-dir": "./vendor/bin/phpunit"
+  },
+  "scripts": {
+    "test": "vendor/bin/phpunit"
   }
 }
